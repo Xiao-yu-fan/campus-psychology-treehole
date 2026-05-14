@@ -1,0 +1,6 @@
+{
+  "buildCommand": "echo 'Static build complete'",
+  "outputDirectory": ".",
+  "framework": null,
+  "installCommand": "echo 'No dependencies to install'"
+}
