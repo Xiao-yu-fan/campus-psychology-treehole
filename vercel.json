@@ -1,6 +1,18 @@
 {
-  "buildCommand": "echo 'Static build complete'",
-  "outputDirectory": ".",
-  "framework": null,
-  "installCommand": "echo 'No dependencies to install'"
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "methods": ["GET"]
+    }
+  ],
+  "functions": {},
+  "installCommand": "",
+  "buildCommand": ""
 }
